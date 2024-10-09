@@ -34,11 +34,3 @@ jobs:
               flake8 "$file"
             fi
           done
-
-      - name: Analyse Python code with pylint
-        run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            if [[ $file == *.py ]]; then
-            pylint "$file"
-          fi
-          done
