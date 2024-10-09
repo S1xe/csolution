@@ -4,3 +4,4 @@ if __name__ == '__main__':
     pprint({"data": {}})
     print({"data": "value"})
     print("Hello World")
+    print(1)
